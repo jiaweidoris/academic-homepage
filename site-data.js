@@ -38,7 +38,6 @@ const SITE_DATA = {
       links: [
         { label: "Email", href: "mailto:jiaweitju@163.com" },
         { label: "GitHub", href: "https://github.com/jiaweidoris" },
-        { label: "主页 V1", href: "https://jiaweidoris.github.io/" },
       ],
       interests: ["多模态大模型", "多模态推理", "自然语言处理"],
     },
@@ -235,7 +234,6 @@ const SITE_DATA = {
       links: [
         { label: "Email", href: "mailto:jiaweitju@163.com" },
         { label: "GitHub", href: "https://github.com/jiaweidoris" },
-        { label: "Homepage V1", href: "https://jiaweidoris.github.io/" },
       ],
       interests: ["Multimodal Large Language Models", "Multimodal Reasoning", "Natural Language Processing"],
     },
