@@ -43,11 +43,11 @@ const SITE_DATA = {
       interests: ["多模态推理", "RLVR", "信息抽取", "事件推理", "视频时序定位"],
     },
     news: [
-      { date: "2025.10", text: "U-MERE 正式发表于 ACM MM 2025。" },
-      { date: "2025.07", text: "PIPER 正式发表于 ACL 2025。" },
-      { date: "2025.07", text: "参与的 GLM-4.5V 与 GLM-4.1V-Thinking 技术报告发布于 arXiv。" },
-      { date: "2025", text: "Multi-Grained Dynamic Feature Resorter 被 Neurocomputing 录用。" },
-      { date: "2025", text: "TimeWeaver 正式发表于 Electronics。" },
+      { date: "2026.07", text: "一篇论文被 Neurocomputing 录用。" },
+      { date: "2025.10", text: "一篇论文发表于 ACM Multimedia 2025。" },
+      { date: "2025.09", text: "一篇论文发表于 Electronics。" },
+      { date: "2025.07", text: "一篇论文发表于 ACL 2025。" },
+      { date: "2025.07", text: "一篇技术报告发布于 arXiv。" },
     ],
     publicationGroups: [
       {
@@ -55,6 +55,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "ACM MM\n2025",
+            image: "assets/publications/umere.jpg",
+            imageAlt: "U-MERE 任务示意图：从受限跨模态关系抽取扩展到无约束多模态实体关系抽取",
             title: "U-MERE: Unconstrained Multimodal Entity and Relation Extraction with Collaborative Modeling and Order-Sensitive Optimization",
             authors: "Wei Jia, Li Jin, Kaiwen Wei, Yuying Shang, Nayu Liu, Zhicong Lu, Qing Liu, Linhao Zhang, Jiang Zhong, Yanfeng Hu",
             venue: "ACM Multimedia 2025 · CCF-A · 第一作者",
@@ -63,6 +65,8 @@ const SITE_DATA = {
           },
           {
             badge: "ACL\n2025",
+            image: "assets/publications/piper.jpg",
+            imageAlt: "PIPER 上下文事件推理任务与基准结果示意图",
             title: "PIPER: Benchmarking and Prompting Event Reasoning Boundary of LLMs via Debiasing-Distillation Enhanced Tuning",
             authors: "Zhicong Lu, Changyuan Tian, Peiguang Li, Li Jin, Sirui Wang, Wei Jia, Ying Shen, Guangluan Xu",
             venue: "ACL 2025 · CCF-A · 第六作者",
@@ -71,16 +75,21 @@ const SITE_DATA = {
           },
           {
             badge: "Neuro-\ncomputing",
+            image: "assets/publications/mugre.jpg",
+            imageAlt: "MuGRE 的多粒度样本匹配与动态课程排序示意图",
             title: "Multi-Grained Dynamic Feature Resorter with Curriculum Bootstrapping for Multimodal Entity and Relation Extraction",
-            authors: "Wei Jia, et al.",
-            venue: "Neurocomputing · SCI · IF 6.7 · 第一作者 · 已录用",
+            authors: "Wei Jia, Zhicong Lu, Li Jin, Linhao Zhang, Kaiwen Wei, Qing Liu, Liang Zhao, Yanfeng Hu",
+            venue: "Neurocomputing · SCI · 第一作者 · 已录用",
             description: "通过可学习跨模态交互与课程式动态排序降低多模态抽取中的无关视觉噪声。",
+            links: [{ label: "Paper", href: "https://doi.org/10.1016/j.neucom.2026.134606" }],
           },
           {
             badge: "Electronics\n2025",
+            image: "assets/publications/timeweaver.jpg",
+            imageAlt: "TimeWeaver 时序混合专家、双向预训练与强化学习整体框架图",
             title: "TimeWeaver: Orchestrating Narrative Order via Temporal Mixture-of-Experts Integrated Event–Order Bidirectional Pretraining and Multi-Granular Reward Reinforcement Learning",
-            authors: "Zhicong Lu, Wei Jia, et al.",
-            venue: "Electronics · SCI · 第二作者 · 已发表",
+            authors: "Zhicong Lu, Wei Jia, Changyuan Tian, Li Jin, Yang Bai, Guangluan Xu",
+            venue: "Electronics 2025, 14, 3880 · SCI · 第二作者",
             description: "结合事件顺序双向预训练、时序混合专家与多粒度奖励，提升叙事生成的时序合理性。",
             links: [{ label: "Paper", href: "https://doi.org/10.3390/electronics14193880" }],
           },
@@ -117,6 +126,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "GLM-V\nReport",
+            image: "assets/publications/glmv.jpg",
+            imageAlt: "GLM-4.5V 和 GLM-4.1V-Thinking 能力对比及强化学习增益图",
             title: "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning",
             authors: "GLM-V Team · Contributor",
             venue: "Technical Report · 2025",
@@ -213,11 +224,11 @@ const SITE_DATA = {
       interests: ["Multimodal Reasoning", "RLVR", "Information Extraction", "Event Reasoning", "Video Grounding"],
     },
     news: [
-      { date: "2025.10", text: "U-MERE was published at ACM Multimedia 2025." },
-      { date: "2025.07", text: "PIPER was published at ACL 2025." },
-      { date: "2025.07", text: "The GLM-4.5V and GLM-4.1V-Thinking technical report was released on arXiv." },
-      { date: "2025", text: "Multi-Grained Dynamic Feature Resorter was accepted by Neurocomputing." },
-      { date: "2025", text: "TimeWeaver was published in Electronics." },
+      { date: "2026.07", text: "One paper is accepted by Neurocomputing." },
+      { date: "2025.10", text: "One paper is published at ACM Multimedia 2025." },
+      { date: "2025.09", text: "One paper is published in Electronics." },
+      { date: "2025.07", text: "One paper is published at ACL 2025." },
+      { date: "2025.07", text: "One technical report is released on arXiv." },
     ],
     publicationGroups: [
       {
@@ -225,6 +236,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "ACM MM\n2025",
+            image: "assets/publications/umere.jpg",
+            imageAlt: "U-MERE task illustration, extending constrained cross-modal relation extraction to unconstrained multimodal entity and relation extraction",
             title: "U-MERE: Unconstrained Multimodal Entity and Relation Extraction with Collaborative Modeling and Order-Sensitive Optimization",
             authors: "Wei Jia, Li Jin, Kaiwen Wei, Yuying Shang, Nayu Liu, Zhicong Lu, Qing Liu, Linhao Zhang, Jiang Zhong, Yanfeng Hu",
             venue: "ACM Multimedia 2025 · CCF-A · First Author",
@@ -233,6 +246,8 @@ const SITE_DATA = {
           },
           {
             badge: "ACL\n2025",
+            image: "assets/publications/piper.jpg",
+            imageAlt: "PIPER contextual event reasoning tasks and benchmark results",
             title: "PIPER: Benchmarking and Prompting Event Reasoning Boundary of LLMs via Debiasing-Distillation Enhanced Tuning",
             authors: "Zhicong Lu, Changyuan Tian, Peiguang Li, Li Jin, Sirui Wang, Wei Jia, Ying Shen, Guangluan Xu",
             venue: "ACL 2025 · CCF-A · Sixth Author",
@@ -241,16 +256,21 @@ const SITE_DATA = {
           },
           {
             badge: "Neuro-\ncomputing",
+            image: "assets/publications/mugre.jpg",
+            imageAlt: "MuGRE multi-grained sample matching and dynamic curriculum reordering",
             title: "Multi-Grained Dynamic Feature Resorter with Curriculum Bootstrapping for Multimodal Entity and Relation Extraction",
-            authors: "Wei Jia, et al.",
-            venue: "Neurocomputing · SCI · IF 6.7 · First Author · Accepted",
+            authors: "Wei Jia, Zhicong Lu, Li Jin, Linhao Zhang, Kaiwen Wei, Qing Liu, Liang Zhao, Yanfeng Hu",
+            venue: "Neurocomputing · SCI · First Author · Accepted",
             description: "Reduces irrelevant visual noise through learnable cross-modal interaction and curriculum-based dynamic reordering.",
+            links: [{ label: "Paper", href: "https://doi.org/10.1016/j.neucom.2026.134606" }],
           },
           {
             badge: "Electronics\n2025",
+            image: "assets/publications/timeweaver.jpg",
+            imageAlt: "TimeWeaver framework with temporal mixture-of-experts, bidirectional pretraining, and reinforcement learning",
             title: "TimeWeaver: Orchestrating Narrative Order via Temporal Mixture-of-Experts Integrated Event–Order Bidirectional Pretraining and Multi-Granular Reward Reinforcement Learning",
-            authors: "Zhicong Lu, Wei Jia, et al.",
-            venue: "Electronics · SCI · Second Author · Published",
+            authors: "Zhicong Lu, Wei Jia, Changyuan Tian, Li Jin, Yang Bai, Guangluan Xu",
+            venue: "Electronics 2025, 14, 3880 · SCI · Second Author",
             description: "Combines bidirectional event-order pretraining, temporal mixture-of-experts, and multi-granular rewards for narrative generation.",
             links: [{ label: "Paper", href: "https://doi.org/10.3390/electronics14193880" }],
           },
@@ -287,6 +307,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "GLM-V\nReport",
+            image: "assets/publications/glmv.jpg",
+            imageAlt: "GLM-4.5V and GLM-4.1V-Thinking capability comparison and reinforcement learning gains",
             title: "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning",
             authors: "GLM-V Team · Contributor",
             venue: "Technical Report · 2025",

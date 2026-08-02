@@ -90,11 +90,39 @@ function renderPublications(groups) {
 
     group.items.forEach((item) => {
       const article = document.createElement("article");
-      article.className = "publication-item";
-      const badge = document.createElement("div");
-      badge.className = "publication-badge";
-      badge.textContent = item.badge;
+      article.className = `publication-item ${item.image ? "publication-item-featured" : "publication-item-compact"}`;
+      let visual;
+      if (item.image) {
+        const image = document.createElement("img");
+        image.className = "publication-figure";
+        image.src = item.image;
+        image.alt = item.imageAlt || item.title;
+        image.loading = "lazy";
+        image.decoding = "async";
+        const paperLink = item.links?.[0]?.href;
+        if (paperLink) {
+          const anchor = document.createElement("a");
+          anchor.className = "publication-figure-link";
+          anchor.href = paperLink;
+          anchor.target = "_blank";
+          anchor.rel = "noreferrer";
+          anchor.setAttribute("aria-label", `${item.title} — Paper`);
+          anchor.appendChild(image);
+          visual = anchor;
+        } else {
+          const wrapper = document.createElement("div");
+          wrapper.className = "publication-figure-link";
+          wrapper.appendChild(image);
+          visual = wrapper;
+        }
+      } else {
+        const badge = document.createElement("div");
+        badge.className = "publication-badge";
+        badge.textContent = item.badge;
+        visual = badge;
+      }
       const content = document.createElement("div");
+      content.className = "publication-content";
       const title = document.createElement("h3");
       title.className = "publication-title";
       title.textContent = item.title;
@@ -117,7 +145,7 @@ function renderPublications(groups) {
         item.links.forEach((link) => links.appendChild(makeExternalLink(link, "publication-link")));
         content.appendChild(links);
       }
-      article.append(badge, content);
+      article.append(visual, content);
       list.appendChild(article);
     });
     section.append(heading, list);
