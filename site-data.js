@@ -28,7 +28,7 @@ const SITE_DATA = {
       publicationSummary: "以第一作者或通讯作者身份围绕多模态推理、RLVR、信息抽取与事件推理开展研究；参与技术报告 1 篇，发表或录用 CCF-A 论文 2 篇、SCI 期刊论文 2 篇，并有多篇工作在投。",
       biography: [
         "贾唯现为中国科学院大学博士研究生，就读于中国科学院空天信息创新研究院目标认知与应用技术国家重点实验室，预计于 2027 年 6 月毕业。2022 年获得天津大学电子信息工程学士学位，专业排名前 5%，并推免直博。",
-        "研究方向包括 **multi-modal vision-language models**、多模态推理与自然语言处理，尤其关注如何提升模型的多模态理解和推理能力。先后在智谱 AI 与阿里巴巴高德地图开展多模态大模型和视频推理相关研发实践。",
+        "研究方向包括 **多模态大模型**、多模态推理与自然语言处理，尤其关注如何提升模型的多模态理解和推理能力。先后在智谱 AI 与阿里巴巴高德地图开展多模态大模型和视频推理相关研发实践。",
       ],
       facts: [
         { icon: "📍", text: "北京，中国" },
@@ -40,7 +40,7 @@ const SITE_DATA = {
         { label: "GitHub", href: "https://github.com/jiaweidoris" },
         { label: "主页 V1", href: "https://jiaweidoris.github.io/" },
       ],
-      interests: ["多模态视觉-语言模型", "多模态推理", "自然语言处理"],
+      interests: ["多模态大模型", "多模态推理", "自然语言处理"],
     },
     news: [
       { date: "2026.07", text: "一篇论文被 Neurocomputing 录用。" },
@@ -213,7 +213,7 @@ const SITE_DATA = {
       publicationSummary: "As a first or corresponding author, I work on multimodal reasoning, RLVR, information extraction, and event reasoning. My portfolio includes one technical report, two published or accepted CCF-A papers, two SCI journal papers, and multiple submissions.",
       biography: [
         "Jiawei Jia is a PhD candidate at the University of Chinese Academy of Sciences and the Aerospace Information Research Institute, Chinese Academy of Sciences, affiliated with the State Key Laboratory of Target Cognition and Application Technology, and expects to graduate in June 2027. Jiawei received a B.Eng. in Electronic Information Engineering from Tianjin University in 2022, ranked in the top 5%, and was directly admitted to the doctoral program.",
-        "Jiawei’s research interests include **multi-modal vision-language models**, multimodal reasoning, and natural language processing, with a particular focus on improving multimodal understanding and reasoning capabilities. Jiawei has contributed to multimodal foundation model and video reasoning research through internships at Zhipu AI and Alibaba Amap.",
+        "Jiawei’s research interests include **multimodal large language models**, multimodal reasoning, and natural language processing, with a particular focus on improving multimodal understanding and reasoning capabilities. Jiawei has contributed to multimodal foundation model and video reasoning research through internships at Zhipu AI and Alibaba Amap.",
       ],
       facts: [
         { icon: "📍", text: "Beijing, China" },
@@ -225,7 +225,7 @@ const SITE_DATA = {
         { label: "GitHub", href: "https://github.com/jiaweidoris" },
         { label: "Homepage V1", href: "https://jiaweidoris.github.io/" },
       ],
-      interests: ["Multi-modal Vision-Language Models", "Multimodal Reasoning", "Natural Language Processing"],
+      interests: ["Multimodal Large Language Models", "Multimodal Reasoning", "Natural Language Processing"],
     },
     news: [
       { date: "2026.07", text: "One paper is accepted by Neurocomputing." },
