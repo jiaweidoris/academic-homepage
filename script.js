@@ -68,6 +68,36 @@ function renderBiography(paragraphs) {
   });
 }
 
+function renderOpportunity(item) {
+  const root = document.getElementById("opportunity-card");
+  root.innerHTML = "";
+
+  const message = document.createElement("p");
+  message.className = "opportunity-message";
+  const messageStrong = document.createElement("strong");
+  messageStrong.textContent = item.message;
+  message.appendChild(messageStrong);
+
+  const contacts = document.createElement("div");
+  contacts.className = "opportunity-contacts";
+
+  const email = document.createElement("p");
+  const emailLabel = document.createElement("strong");
+  const emailLink = document.createElement("a");
+  emailLabel.textContent = `${item.emailLabel}:`;
+  emailLink.href = `mailto:${item.email}`;
+  emailLink.textContent = item.email;
+  email.append(emailLabel, document.createTextNode(" "), emailLink);
+
+  const wechat = document.createElement("p");
+  const wechatLabel = document.createElement("strong");
+  wechatLabel.textContent = `${item.wechatLabel}:`;
+  wechat.append(wechatLabel, document.createTextNode(` ${item.wechat}`));
+
+  contacts.append(email, wechat);
+  root.append(message, contacts);
+}
+
 function renderNews(items) {
   const root = document.getElementById("news-list");
   root.innerHTML = "";
@@ -166,7 +196,7 @@ function renderSimpleList(rootId, items) {
   root.innerHTML = "";
   items.forEach((item) => {
     const article = document.createElement("article");
-    article.className = `simple-item ${item.logo ? "simple-item-with-logo" : ""}`.trim();
+    article.className = `simple-item ${item.logo ? "simple-item-with-logo" : ""} ${item.logoTone ? `simple-item-logo-${item.logoTone}` : ""}`.trim();
     let logoShell;
     if (item.logo) {
       logoShell = document.createElement("div");
@@ -228,6 +258,7 @@ function render(language) {
   });
   renderProfile(data);
   renderBiography(data.profile.biography);
+  renderOpportunity(data.opportunity);
   renderNews(data.news);
   renderPublications(data.publicationGroups);
   renderSimpleList("experience-list", data.experience);

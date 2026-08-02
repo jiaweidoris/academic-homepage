@@ -1,4 +1,4 @@
-# Jiawei Jia Academic Homepage · Sidebar Edition
+# Wei Jia Academic Homepage · Sidebar Edition
 
 这是贾唯的第二套个人学术主页源码。它采用传统学术主页的左侧个人信息栏与右侧内容布局，并与已有的 `jiaweidoris.github.io` 主页并行保留。
 
