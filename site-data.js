@@ -28,7 +28,7 @@ const SITE_DATA = {
       publicationSummary: "以第一作者或通讯作者身份围绕多模态推理、RLVR、信息抽取与事件推理开展研究；参与技术报告 1 篇，发表或录用 CCF-A 论文 2 篇、SCI 期刊论文 2 篇，并有多篇工作在投。",
       biography: [
         "贾唯现为中国科学院大学博士研究生，就读于中国科学院空天信息创新研究院目标认知与应用技术国家重点实验室，预计于 2027 年 6 月毕业。2022 年获得天津大学电子信息工程学士学位，专业排名前 5%，并推免直博。",
-        "研究方向包括多模态推理、可验证奖励强化学习（RLVR）、信息抽取、事件推理与视频时序定位。研究关注视觉证据、推理过程与最终答案之间的一致性，以及面向复杂视频理解和信息抽取任务的数据、训练与评测方法。先后在智谱 AI 与阿里巴巴高德地图开展多模态大模型和视频推理相关研发实践。",
+        "研究方向包括 **multi-modal vision-language models**、多模态推理与自然语言处理，尤其关注如何提升模型的多模态理解和推理能力。先后在智谱 AI 与阿里巴巴高德地图开展多模态大模型和视频推理相关研发实践。",
       ],
       facts: [
         { icon: "📍", text: "北京，中国" },
@@ -40,7 +40,7 @@ const SITE_DATA = {
         { label: "GitHub", href: "https://github.com/jiaweidoris" },
         { label: "主页 V1", href: "https://jiaweidoris.github.io/" },
       ],
-      interests: ["多模态推理", "RLVR", "信息抽取", "事件推理", "视频时序定位"],
+      interests: ["多模态视觉-语言模型", "多模态推理", "自然语言处理"],
     },
     news: [
       { date: "2026.07", text: "一篇论文被 Neurocomputing 录用。" },
@@ -55,8 +55,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "ACM MM\n2025",
-            image: "assets/publications/umere.jpg",
-            imageAlt: "U-MERE 任务示意图：从受限跨模态关系抽取扩展到无约束多模态实体关系抽取",
+            image: "assets/publications/umere-figure-3.jpg",
+            imageAlt: "U-MERE Figure 3：协同建模与顺序敏感机制框架图",
             title: "U-MERE: Unconstrained Multimodal Entity and Relation Extraction with Collaborative Modeling and Order-Sensitive Optimization",
             authors: "Wei Jia, Li Jin, Kaiwen Wei, Yuying Shang, Nayu Liu, Zhicong Lu, Qing Liu, Linhao Zhang, Jiang Zhong, Yanfeng Hu",
             venue: "ACM Multimedia 2025 · CCF-A · 第一作者",
@@ -65,8 +65,8 @@ const SITE_DATA = {
           },
           {
             badge: "ACL\n2025",
-            image: "assets/publications/piper.jpg",
-            imageAlt: "PIPER 上下文事件推理任务与基准结果示意图",
+            image: "assets/publications/piper-figure-3.jpg",
+            imageAlt: "PIPER Figure 3：去偏与蒸馏增强监督微调框架图",
             title: "PIPER: Benchmarking and Prompting Event Reasoning Boundary of LLMs via Debiasing-Distillation Enhanced Tuning",
             authors: "Zhicong Lu, Changyuan Tian, Peiguang Li, Li Jin, Sirui Wang, Wei Jia, Ying Shen, Guangluan Xu",
             venue: "ACL 2025 · CCF-A · 第六作者",
@@ -75,8 +75,8 @@ const SITE_DATA = {
           },
           {
             badge: "Neuro-\ncomputing",
-            image: "assets/publications/mugre.jpg",
-            imageAlt: "MuGRE 的多粒度样本匹配与动态课程排序示意图",
+            image: "assets/publications/mugre-figure-3.jpg",
+            imageAlt: "MuGRE Figure 3：多粒度动态特征重排整体框架图",
             title: "Multi-Grained Dynamic Feature Resorter with Curriculum Bootstrapping for Multimodal Entity and Relation Extraction",
             authors: "Wei Jia, Zhicong Lu, Li Jin, Linhao Zhang, Kaiwen Wei, Qing Liu, Liang Zhao, Yanfeng Hu",
             venue: "Neurocomputing · SCI · 第一作者 · 已录用",
@@ -108,6 +108,8 @@ const SITE_DATA = {
           {
             badge: "Under\nReview",
             title: "CORA: Analyzing and Bridging the Thinking–Answer Gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+            image: "assets/publications/cora-figure-3.jpg",
+            imageAlt: "CORA Figure 3：一致性奖励模型与推理对齐整体框架图",
             authors: "Jiawei Jia (Corresponding Author), et al.",
             venue: "EMNLP · 通讯作者 · 已投稿 · Meta Review 3",
             description: "分析多模态 RLVR 中思维链与最终答案的一致性问题，并通过一致性导向的奖励实现协同对齐。",
@@ -115,6 +117,8 @@ const SITE_DATA = {
           {
             badge: "Under\nReview",
             title: "HiSR: Hindsight-Information-Modulated Segmental Process Rewards for Multi-Turn Agentic Reinforcement Learning",
+            image: "assets/publications/hisr-figure-2.jpg",
+            imageAlt: "HiSR Figure 2：后见信息调制分段过程奖励方法框架图",
             authors: "Jiawei Jia (Second Author), et al.",
             venue: "AAAI · 第二作者 · 已投稿",
             description: "将长程交互拆分为可评估的决策片段，并利用后见信息构造细粒度过程奖励。",
@@ -126,8 +130,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "GLM-V\nReport",
-            image: "assets/publications/glmv.jpg",
-            imageAlt: "GLM-4.5V 和 GLM-4.1V-Thinking 能力对比及强化学习增益图",
+            image: "assets/publications/glmv-figure-2.jpg",
+            imageAlt: "GLM-V Figure 2：GLM-4.1V-Thinking、GLM-4.5V 与 GLM-4.6V 共享架构图",
             title: "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning",
             authors: "GLM-V Team · Contributor",
             venue: "Technical Report · 2025",
@@ -209,7 +213,7 @@ const SITE_DATA = {
       publicationSummary: "As a first or corresponding author, I work on multimodal reasoning, RLVR, information extraction, and event reasoning. My portfolio includes one technical report, two published or accepted CCF-A papers, two SCI journal papers, and multiple submissions.",
       biography: [
         "Jiawei Jia is a PhD candidate at the University of Chinese Academy of Sciences and the Aerospace Information Research Institute, Chinese Academy of Sciences, affiliated with the State Key Laboratory of Target Cognition and Application Technology, and expects to graduate in June 2027. Jiawei received a B.Eng. in Electronic Information Engineering from Tianjin University in 2022, ranked in the top 5%, and was directly admitted to the doctoral program.",
-        "Jiawei’s research interests include multimodal reasoning, reinforcement learning with verifiable rewards (RLVR), information extraction, event reasoning, and video temporal grounding. The research focuses on consistency among visual evidence, reasoning processes, and final answers, as well as data, training, and evaluation methods for complex video understanding and information extraction. Jiawei has contributed to multimodal foundation model and video reasoning research through internships at Zhipu AI and Alibaba Amap.",
+        "Jiawei’s research interests include **multi-modal vision-language models**, multimodal reasoning, and natural language processing, with a particular focus on improving multimodal understanding and reasoning capabilities. Jiawei has contributed to multimodal foundation model and video reasoning research through internships at Zhipu AI and Alibaba Amap.",
       ],
       facts: [
         { icon: "📍", text: "Beijing, China" },
@@ -221,7 +225,7 @@ const SITE_DATA = {
         { label: "GitHub", href: "https://github.com/jiaweidoris" },
         { label: "Homepage V1", href: "https://jiaweidoris.github.io/" },
       ],
-      interests: ["Multimodal Reasoning", "RLVR", "Information Extraction", "Event Reasoning", "Video Grounding"],
+      interests: ["Multi-modal Vision-Language Models", "Multimodal Reasoning", "Natural Language Processing"],
     },
     news: [
       { date: "2026.07", text: "One paper is accepted by Neurocomputing." },
@@ -236,8 +240,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "ACM MM\n2025",
-            image: "assets/publications/umere.jpg",
-            imageAlt: "U-MERE task illustration, extending constrained cross-modal relation extraction to unconstrained multimodal entity and relation extraction",
+            image: "assets/publications/umere-figure-3.jpg",
+            imageAlt: "U-MERE Figure 3: collaborative modeling and order-sensitive mechanism",
             title: "U-MERE: Unconstrained Multimodal Entity and Relation Extraction with Collaborative Modeling and Order-Sensitive Optimization",
             authors: "Wei Jia, Li Jin, Kaiwen Wei, Yuying Shang, Nayu Liu, Zhicong Lu, Qing Liu, Linhao Zhang, Jiang Zhong, Yanfeng Hu",
             venue: "ACM Multimedia 2025 · CCF-A · First Author",
@@ -246,8 +250,8 @@ const SITE_DATA = {
           },
           {
             badge: "ACL\n2025",
-            image: "assets/publications/piper.jpg",
-            imageAlt: "PIPER contextual event reasoning tasks and benchmark results",
+            image: "assets/publications/piper-figure-3.jpg",
+            imageAlt: "PIPER Figure 3: debiasing- and distillation-enhanced supervised fine-tuning framework",
             title: "PIPER: Benchmarking and Prompting Event Reasoning Boundary of LLMs via Debiasing-Distillation Enhanced Tuning",
             authors: "Zhicong Lu, Changyuan Tian, Peiguang Li, Li Jin, Sirui Wang, Wei Jia, Ying Shen, Guangluan Xu",
             venue: "ACL 2025 · CCF-A · Sixth Author",
@@ -256,8 +260,8 @@ const SITE_DATA = {
           },
           {
             badge: "Neuro-\ncomputing",
-            image: "assets/publications/mugre.jpg",
-            imageAlt: "MuGRE multi-grained sample matching and dynamic curriculum reordering",
+            image: "assets/publications/mugre-figure-3.jpg",
+            imageAlt: "MuGRE Figure 3: multi-grained dynamic feature resorting framework",
             title: "Multi-Grained Dynamic Feature Resorter with Curriculum Bootstrapping for Multimodal Entity and Relation Extraction",
             authors: "Wei Jia, Zhicong Lu, Li Jin, Linhao Zhang, Kaiwen Wei, Qing Liu, Liang Zhao, Yanfeng Hu",
             venue: "Neurocomputing · SCI · First Author · Accepted",
@@ -289,6 +293,8 @@ const SITE_DATA = {
           {
             badge: "Under\nReview",
             title: "CORA: Analyzing and Bridging the Thinking–Answer Gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+            image: "assets/publications/cora-figure-3.jpg",
+            imageAlt: "CORA Figure 3: consistency reward model and reasoning alignment framework",
             authors: "Jiawei Jia (Corresponding Author), et al.",
             venue: "EMNLP · Corresponding Author · Under Review · Meta Review 3",
             description: "Studies consistency between reasoning traces and final answers in multimodal RLVR and aligns them through a consistency-oriented reward strategy.",
@@ -296,6 +302,8 @@ const SITE_DATA = {
           {
             badge: "Under\nReview",
             title: "HiSR: Hindsight-Information-Modulated Segmental Process Rewards for Multi-Turn Agentic Reinforcement Learning",
+            image: "assets/publications/hisr-figure-2.jpg",
+            imageAlt: "HiSR Figure 2: hindsight-information-modulated segmental process reward framework",
             authors: "Jiawei Jia (Second Author), et al.",
             venue: "AAAI · Second Author · Under Review",
             description: "Decomposes long-horizon interactions into assessable decision segments and provides hindsight-modulated process rewards.",
@@ -307,8 +315,8 @@ const SITE_DATA = {
         items: [
           {
             badge: "GLM-V\nReport",
-            image: "assets/publications/glmv.jpg",
-            imageAlt: "GLM-4.5V and GLM-4.1V-Thinking capability comparison and reinforcement learning gains",
+            image: "assets/publications/glmv-figure-2.jpg",
+            imageAlt: "GLM-V Figure 2: shared architecture of GLM-4.1V-Thinking, GLM-4.5V, and GLM-4.6V",
             title: "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning",
             authors: "GLM-V Team · Contributor",
             venue: "Technical Report · 2025",

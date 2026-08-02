@@ -55,7 +55,15 @@ function renderBiography(paragraphs) {
   root.innerHTML = "";
   paragraphs.forEach((text) => {
     const paragraph = document.createElement("p");
-    paragraph.textContent = text;
+    text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean).forEach((part) => {
+      if (part.startsWith("**") && part.endsWith("**")) {
+        const strong = document.createElement("strong");
+        strong.textContent = part.slice(2, -2);
+        paragraph.appendChild(strong);
+      } else {
+        paragraph.appendChild(document.createTextNode(part));
+      }
+    });
     root.appendChild(paragraph);
   });
 }
