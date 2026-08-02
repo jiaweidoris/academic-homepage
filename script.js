@@ -166,10 +166,25 @@ function renderSimpleList(rootId, items) {
   root.innerHTML = "";
   items.forEach((item) => {
     const article = document.createElement("article");
-    article.className = "simple-item";
+    article.className = `simple-item ${item.logo ? "simple-item-with-logo" : ""}`.trim();
+    const side = document.createElement("div");
+    side.className = "simple-side";
+    if (item.logo) {
+      const logoShell = document.createElement("div");
+      logoShell.className = "simple-logo-shell";
+      const logo = document.createElement("img");
+      logo.className = "simple-logo";
+      logo.src = item.logo;
+      logo.alt = item.logoAlt || "";
+      logo.loading = "lazy";
+      logo.decoding = "async";
+      logoShell.appendChild(logo);
+      side.appendChild(logoShell);
+    }
     const date = document.createElement("div");
     date.className = "simple-date";
     date.textContent = item.date;
+    side.appendChild(date);
     const content = document.createElement("div");
     const title = document.createElement("h3");
     title.textContent = item.title;
@@ -180,7 +195,7 @@ function renderSimpleList(rootId, items) {
     description.className = "simple-description";
     description.textContent = item.description;
     content.append(title, meta, description);
-    article.append(date, content);
+    article.append(side, content);
     root.appendChild(article);
   });
 }

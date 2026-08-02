@@ -144,12 +144,16 @@ const SITE_DATA = {
     experience: [
       {
         date: "2026.01–至今",
+        logo: "assets/logos/amap.png",
+        logoAlt: "高德地图 Logo",
         title: "阿里巴巴高德地图 · 信息业务中心 Research 算法实习生",
         meta: "视频时序定位与强化学习",
         description: "围绕视频时序定位中的视觉证据—时间戳错配开展问题分析、方法设计、训练评测与多尺度验证，相关研究以第一作者投稿 AAAI。",
       },
       {
         date: "2025.03–2026.01",
+        logo: "assets/logos/zhipu-ai.svg",
+        logoAlt: "智谱 AI Logo",
         title: "北京智谱华章科技有限公司 · AI 院 CogVLM 算法实习生",
         meta: "多模态大模型 SFT / RLVR",
         description: "参与 GLM-4.1V-Thinking、GLM-4.5V 与 GLM-4.6V 训练，负责视频理解与推理数据建设、课程/动态采样、Verifier 调优及统一评测。",
@@ -329,12 +333,16 @@ const SITE_DATA = {
     experience: [
       {
         date: "2026.01–Present",
+        logo: "assets/logos/amap.png",
+        logoAlt: "Amap logo",
         title: "Alibaba Amap · Research Algorithm Intern",
         meta: "Video temporal grounding and reinforcement learning",
         description: "Conducted problem analysis, method design, training, evaluation, and multi-scale validation for visual-evidence–timestamp mismatch in video temporal grounding; organized as a first-author AAAI submission.",
       },
       {
         date: "2025.03–2026.01",
+        logo: "assets/logos/zhipu-ai.svg",
+        logoAlt: "Zhipu AI logo",
         title: "Zhipu AI · CogVLM Algorithm Intern",
         meta: "Multimodal model SFT / RLVR",
         description: "Contributed to GLM-4.1V-Thinking, GLM-4.5V, and GLM-4.6V through video reasoning data, curriculum and dynamic sampling, verifier tuning, and unified evaluation.",

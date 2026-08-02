@@ -158,7 +158,10 @@ a.publication-figure-link:hover { border-color: #cad8e2; box-shadow: 0 9px 24px 
 .publication-links a { font-size: 12px; font-weight: 800; }
 
 .simple-list { display: grid; gap: 22px; }
-.simple-item { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 22px; }
+.simple-item { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 22px; align-items: start; }
+.simple-side { display: grid; gap: 7px; justify-items: start; }
+.simple-logo-shell { display: flex; width: 118px; height: 58px; align-items: center; justify-content: flex-start; }
+.simple-logo { display: block; width: 110px; height: 52px; object-fit: contain; object-position: left center; }
 .simple-date { color: var(--warm); font-family: Georgia, "Times New Roman", serif; font-weight: 700; }
 .simple-item h3 { margin: 0; font-size: 16px; }
 .simple-meta { margin: 3px 0 0; color: var(--muted); font-size: 13px; }
@@ -190,6 +193,9 @@ a.publication-figure-link:hover { border-color: #cad8e2; box-shadow: 0 9px 24px 
   .site-nav { display: none; }
   .content-section { padding: 40px 0 44px; }
   .news-item, .publication-item, .simple-item { grid-template-columns: 1fr; gap: 10px; }
+  .simple-item-with-logo .simple-side { display: flex; align-items: center; gap: 12px; }
+  .simple-item-with-logo .simple-logo-shell { width: 96px; height: 48px; }
+  .simple-item-with-logo .simple-logo { width: 90px; height: 44px; }
   .publication-item-featured { padding: 24px 0; }
   .publication-figure-link { width: 100%; min-height: 0; padding: 10px; }
   .publication-figure { width: 100%; height: auto; max-height: 260px; }
