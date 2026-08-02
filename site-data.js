@@ -113,6 +113,7 @@ const SITE_DATA = {
             authors: "Jiawei Jia (Corresponding Author), et al.",
             venue: "EMNLP · 通讯作者 · 已投稿 · Meta Review 3",
             description: "分析多模态 RLVR 中思维链与最终答案的一致性问题，并通过一致性导向的奖励实现协同对齐。",
+            links: [{ label: "arXiv", href: "https://arxiv.org/abs/2606.14691" }],
           },
           {
             badge: "Under\nReview",
@@ -122,6 +123,7 @@ const SITE_DATA = {
             authors: "Jiawei Jia (Second Author), et al.",
             venue: "AAAI · 第二作者 · 已投稿",
             description: "将长程交互拆分为可评估的决策片段，并利用后见信息构造细粒度过程奖励。",
+            links: [{ label: "arXiv", href: "https://arxiv.org/abs/2603.18683" }],
           },
         ],
       },
@@ -168,12 +170,18 @@ const SITE_DATA = {
     education: [
       {
         date: "2022.09–2027.06",
+        logo: "assets/logos/ucas.png",
+        logoAlt: "中国科学院大学 Logo",
+        logoTone: "brand",
         title: "中国科学院大学",
         meta: "博士 · 中国科学院空天信息创新研究院 · 北京",
         description: "目标认知与应用技术国家重点实验室，GPA 3.83/4.00。",
       },
       {
         date: "2018.09–2022.07",
+        logo: "assets/logos/tianjin-university.png",
+        logoAlt: "天津大学 Logo",
+        logoTone: "brand",
         title: "天津大学",
         meta: "电子信息工程学士 · 天津",
         description: "专业前 5%，推免直博；双一流、985、211。",
@@ -302,6 +310,7 @@ const SITE_DATA = {
             authors: "Jiawei Jia (Corresponding Author), et al.",
             venue: "EMNLP · Corresponding Author · Under Review · Meta Review 3",
             description: "Studies consistency between reasoning traces and final answers in multimodal RLVR and aligns them through a consistency-oriented reward strategy.",
+            links: [{ label: "arXiv", href: "https://arxiv.org/abs/2606.14691" }],
           },
           {
             badge: "Under\nReview",
@@ -311,6 +320,7 @@ const SITE_DATA = {
             authors: "Jiawei Jia (Second Author), et al.",
             venue: "AAAI · Second Author · Under Review",
             description: "Decomposes long-horizon interactions into assessable decision segments and provides hindsight-modulated process rewards.",
+            links: [{ label: "arXiv", href: "https://arxiv.org/abs/2603.18683" }],
           },
         ],
       },
@@ -357,12 +367,18 @@ const SITE_DATA = {
     education: [
       {
         date: "2022.09–2027.06",
+        logo: "assets/logos/ucas.png",
+        logoAlt: "University of Chinese Academy of Sciences logo",
+        logoTone: "brand",
         title: "University of Chinese Academy of Sciences",
         meta: "PhD · Aerospace Information Research Institute, CAS · Beijing",
         description: "State Key Laboratory of Target Cognition and Application Technology · GPA 3.83/4.00.",
       },
       {
         date: "2018.09–2022.07",
+        logo: "assets/logos/tianjin-university.png",
+        logoAlt: "Tianjin University logo",
+        logoTone: "brand",
         title: "Tianjin University",
         meta: "B.Eng. in Electronic Information Engineering · Tianjin",
         description: "Top 5% with direct PhD recommendation · Double First-Class · 985 · 211.",

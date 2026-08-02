@@ -167,11 +167,10 @@ function renderSimpleList(rootId, items) {
   items.forEach((item) => {
     const article = document.createElement("article");
     article.className = `simple-item ${item.logo ? "simple-item-with-logo" : ""}`.trim();
-    const side = document.createElement("div");
-    side.className = "simple-side";
+    let logoShell;
     if (item.logo) {
-      const logoShell = document.createElement("div");
-      logoShell.className = "simple-logo-shell";
+      logoShell = document.createElement("div");
+      logoShell.className = `simple-logo-shell ${item.logoTone ? `simple-logo-shell-${item.logoTone}` : ""}`.trim();
       const logo = document.createElement("img");
       logo.className = "simple-logo";
       logo.src = item.logo;
@@ -179,23 +178,26 @@ function renderSimpleList(rootId, items) {
       logo.loading = "lazy";
       logo.decoding = "async";
       logoShell.appendChild(logo);
-      side.appendChild(logoShell);
     }
     const date = document.createElement("div");
     date.className = "simple-date";
     date.textContent = item.date;
-    side.appendChild(date);
     const content = document.createElement("div");
+    content.className = "simple-content";
+    const heading = document.createElement("div");
+    heading.className = "simple-heading-row";
     const title = document.createElement("h3");
     title.textContent = item.title;
+    heading.append(title, date);
     const meta = document.createElement("p");
     meta.className = "simple-meta";
     meta.textContent = item.meta;
     const description = document.createElement("p");
     description.className = "simple-description";
     description.textContent = item.description;
-    content.append(title, meta, description);
-    article.append(side, content);
+    content.append(heading, meta, description);
+    if (logoShell) article.append(logoShell, content);
+    else article.appendChild(content);
     root.appendChild(article);
   });
 }
