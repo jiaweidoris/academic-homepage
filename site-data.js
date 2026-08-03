@@ -183,7 +183,7 @@ const SITE_DATA = {
         logo: "assets/logos/ucas-color.png",
         logoAlt: "中国科学院大学 Logo",
         logoTone: "school",
-        title: "中国科学院大学",
+        title: "中国科学院大学｜双一流",
         meta: "博士 · 中国科学院空天信息创新研究院 · 北京",
         description: "目标认知与应用技术国家重点实验室，GPA 3.83/4.00。",
       },
@@ -199,7 +199,6 @@ const SITE_DATA = {
     ],
     honors: [
       { year: "2022–2025", title: "研究生一等学业奖学金" },
-      { year: "2022–2026", title: "中国科学院大学学业奖学金" },
       { year: "2021–2022", title: "天津大学优秀毕业生" },
       { year: "2020–2021", title: "天津大学学习优异先进个人" },
       { year: "2018–2022", title: "天津大学三好学生" },
@@ -390,7 +389,7 @@ const SITE_DATA = {
         logo: "assets/logos/ucas-color.png",
         logoAlt: "University of Chinese Academy of Sciences logo",
         logoTone: "school",
-        title: "University of Chinese Academy of Sciences",
+        title: "University of Chinese Academy of Sciences | Double First-Class",
         meta: "PhD · Aerospace Information Research Institute, CAS · Beijing",
         description: "State Key Laboratory of Target Cognition and Application Technology · GPA 3.83/4.00.",
       },
@@ -406,7 +405,6 @@ const SITE_DATA = {
     ],
     honors: [
       { year: "2022–2025", title: "Graduate First-Class Academic Scholarship" },
-      { year: "2022–2026", title: "UCAS Academic Scholarship" },
       { year: "2021–2022", title: "Outstanding Graduate, Tianjin University" },
       { year: "2020–2021", title: "Advanced Individual in Academic Excellence" },
       { year: "2018–2022", title: "Outstanding Student, Tianjin University" },
