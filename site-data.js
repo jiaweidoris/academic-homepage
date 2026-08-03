@@ -106,6 +106,8 @@ const SITE_DATA = {
           {
             badge: "Under\nReview",
             title: "CAVE: Competence-Aware Visual Boundary Evidence Alignment for Video Temporal Grounding",
+            image: "assets/publications/cave-figure-3.jpg",
+            imageAlt: "CAVE Figure 3：证据 token 预热与能力感知强化学习框架图",
             authors: "Wei Jia (First Author), et al.",
             venue: "AAAI · 第一作者 · 已投稿",
             description: "研究视频时序定位中的视觉证据—时间戳错配，并以能力感知的边界证据对齐改善高精度区间预测。",
@@ -311,6 +313,8 @@ const SITE_DATA = {
           {
             badge: "Under\nReview",
             title: "CAVE: Competence-Aware Visual Boundary Evidence Alignment for Video Temporal Grounding",
+            image: "assets/publications/cave-figure-3.jpg",
+            imageAlt: "CAVE Figure 3: evidence-token warm-up and competence-aware reinforcement learning framework",
             authors: "Wei Jia (First Author), et al.",
             venue: "AAAI · First Author · Under Review",
             description: "Addresses visual-evidence–timestamp mismatch in video temporal grounding through competence-aware boundary evidence alignment.",
