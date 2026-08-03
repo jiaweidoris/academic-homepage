@@ -192,9 +192,9 @@ const SITE_DATA = {
         logo: "assets/logos/tianjin-university-color.jpg",
         logoAlt: "天津大学 Logo",
         logoTone: "school",
-        title: "天津大学",
+        title: "天津大学｜双一流｜985｜211",
         meta: "电子信息工程学士 · 天津",
-        description: "专业前 5%，推免直博；双一流、985、211。",
+        description: "专业前 5%，推免直博。",
       },
     ],
     honors: [
@@ -398,9 +398,9 @@ const SITE_DATA = {
         logo: "assets/logos/tianjin-university-color.jpg",
         logoAlt: "Tianjin University logo",
         logoTone: "school",
-        title: "Tianjin University",
+        title: "Tianjin University | Double First-Class | 985 | 211",
         meta: "B.Eng. in Electronic Information Engineering · Tianjin",
-        description: "Top 5% with direct PhD recommendation · Double First-Class · 985 · 211.",
+        description: "Top 5% with direct PhD recommendation.",
       },
     ],
     honors: [
