@@ -111,6 +111,7 @@ const SITE_DATA = {
             authors: "Wei Jia (First Author), et al.",
             venue: "AAAI · 第一作者 · 已投稿",
             description: "研究视频时序定位中的视觉证据—时间戳错配，并以能力感知的边界证据对齐改善高精度区间预测。",
+            links: [{ label: "arXiv", href: "https://arxiv.org/abs/2608.02078" }],
           },
           {
             badge: "Under\nReview",
@@ -317,6 +318,7 @@ const SITE_DATA = {
             authors: "Wei Jia (First Author), et al.",
             venue: "AAAI · First Author · Under Review",
             description: "Addresses visual-evidence–timestamp mismatch in video temporal grounding through competence-aware boundary evidence alignment.",
+            links: [{ label: "arXiv", href: "https://arxiv.org/abs/2608.02078" }],
           },
           {
             badge: "Under\nReview",
